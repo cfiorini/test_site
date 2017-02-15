@@ -1,0 +1,34 @@
+= render partial: 'home/home_slider'
+= render partial: 'home/menu'
+= render partial: 'home/about_us'
+= render partial: 'home/products'
+= render partial: 'home/timeline'
+= render partial: 'home/services'
+= render partial: 'home/customers'
+= render partial: 'home/news'
+= render partial: 'home/fun_facts'
+= render partial: 'home/contact_form'
+= render partial: 'home/map'
+= render partial: 'home/contact_details'
+= render partial: 'home/social_icons'
+= render partial: 'home/footer'
+
+javascript:
+  $(document).ready(function() {
+
+    $('#mapplic').mapplic({
+      source: '/offices.json',
+      selector: '#countries > *',
+      height: 460,
+      animate: false,
+      sidebar: false,
+      minimap: false,
+      locations: true,
+      deeplinking: true,
+      fullscreen: false,
+      hovertip: true,
+      developer: false,
+      maxscale: 6,
+      zoom: true
+    });
+  });

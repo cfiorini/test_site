@@ -1,0 +1,28 @@
+section#header.header-section
+  #sticky-section.sticky-navigation
+    #top-section.top-container.absolute.container
+      .row
+        .col-md-12
+          #logo.site-logo.col-md-3.no-padding
+            a href="/" target="_blank"
+              img src="/images/logo_vox.png" style="height: 45px"
+          #navigation.col-md-9.no-padding.navbar.top-navbar
+            .navbar-header.nav-respons
+              button.navbar-toggle data-target=".bs-navbar-collapse" data-toggle="collapse" type="button"
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            nav#topnav.collapse.navbar-collapse.bs-navbar-collapse.no-padding role="navigation"
+              ul.nav.navbar-nav.navbar-right.uppercase
+                li
+                  a.scroll href="#about-us"= @translation.intro_label
+                li
+                  a.scroll href="#services"= @translation.services_label
+                li
+                  a href="#news" class="scroll"= @translation.news_label
+                li
+                  a href="#contact" class="scroll"= @translation.contacts_label
+                - for translation in @site.translations
+                  a href="/#{@site.slug}?l=#{translation.id}" class="scroll"
+                    img src="/images/flags/#{translation.language.country_code}.png" style="height: 25px;padding-top: 5px; margin-right: 10px"

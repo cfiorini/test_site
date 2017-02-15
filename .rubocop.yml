@@ -1,0 +1,84 @@
+# --- Run Commands --- #
+
+# rubocop -D --color # Adds cop names and colour output
+# rubocop --auto-gen-config # creates todo yml file
+# rubocop --format html -o rubocop.html # Generates nice html output
+
+# --- Included Files --- #
+
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - '**/Gemfile'
+    - '**/Guardfile'
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - doc/**/*
+    - test/**/*
+
+# --- Extra Rails Cops --- #
+
+Rails:
+  Enabled: true
+
+# --- Style --- #
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody: # prefer empty line for legibility
+  Enabled: false
+
+Style/EmptyLinesAroundModuleBody: # prefer empty line for legibility
+  Enabled: false
+
+Style/For:
+  Description: 'Checks use of for or each in multiline loops.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-for-loops'
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Description: 'Checks style of children classes and modules.'
+  Enabled: false
+
+Style/Next:
+  Description: 'Use `next` to skip iteration instead of a condition at the end.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals'
+  Enabled: false
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
+  Enabled: false
+
+# --- Lint --- #
+
+Lint/UselessAssignment:
+  Severity: warning
+
+# --- Metrics --- #
+
+Metrics/AbcSize:
+  Description: >-
+                 A calculated magnitude based on number of assignments,
+                 branches, and conditions.
+  Reference: 'http://c2.com/cgi/wiki?AbcMetric'
+  Enabled: false
+
+Metrics/LineLength:
+  Severity: refactor
+
+Metrics/MethodLength:
+  Severity: refactor
+
+# --- Rails --- #
+
+Rails/TimeZone:
+  Description: 'Checks the correct usage of time zone aware methods.'
+  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#time'
+  Reference: 'http://danilenko.org/2012/7/6/rails_timezones'
+  Enabled: false

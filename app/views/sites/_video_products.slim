@@ -1,0 +1,16 @@
+section#tech-skills.tech-skills-section.2-col-section style="background-color: #252525"
+  .container.no-padding
+    .row.no-margin.col-color-bg
+      .col-md-6.col-color-bg style="padding: 40px"
+        .strat-up-content
+          h3= @translation.products_label
+          p
+          .text-center
+            =raw @translation.products
+          .startup-btns
+            a.btn href="http://www.voxtours.com#products"= @translation.products_link_label
+
+
+      .col-md-6.no-padding.video-section.col-img-bg
+        #video_container.video-bg
+        #P2.player.video-container data-property="{videoURL:'AGtPKhVY_jc',containment:'#video_container',autoPlay:true, showControls:false, mute:true, startAt:0}"

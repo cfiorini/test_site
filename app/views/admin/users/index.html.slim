@@ -1,0 +1,23 @@
+.container
+  legend 
+    | Listing Users
+    .pull-right= link_to 'New User', new_admin_user_path, class: 'btn btn-primary btn-xs'
+    .clearfix
+  .col-md-8
+    table.table
+      thead
+        tr
+          th Email
+          th Admin?
+          th Site
+          th
+          th
+
+      tbody
+        - @users.each do |user|
+          tr
+            td = user.email
+            td = user.admin?
+            td = user.site.try :name            
+            td = link_to 'Edit', edit_admin_user_path(user)
+            td = link_to 'Destroy', admin_user_path(user), data: {:confirm => 'Are you sure?'}, :method => :delete

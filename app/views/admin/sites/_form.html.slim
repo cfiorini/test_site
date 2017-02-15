@@ -1,0 +1,32 @@
+= form_for [:admin, @site], html: { multipart: true } do |f|
+  - if @site.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@site.errors.count, "error")} prohibited this site from being saved:"
+      ul
+        - @site.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control'
+  .form-group
+    = f.label :slug
+    = f.text_field :slug, class: 'form-control'
+  .form-group
+    = f.label :default_translation
+    = f.collection_select :default_translation_id, @site.translations, :id, :language_name,{}, class: 'form-control'
+  .form-group
+    = f.label :keywords, 'Keywords (one per row)'
+    = f.text_area :keywords, class: 'form-control', rows: 10
+  .form-group
+    = f.label :map_image, 'Map Image'
+    = f.file_field :map_image, class: 'form-control'
+  .form-group
+    = f.label :map_url, 'Map Link'
+    = f.text_field :map_url, class: 'form-control'
+  .form-group
+    = f.label :header, 'Header Image'
+    = f.file_field :header, class: 'form-control'
+  .form-actions 
+    .text-center
+      = f.submit nil, class: 'btn btn-primary'

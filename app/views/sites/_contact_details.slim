@@ -1,0 +1,30 @@
+section#contact.section.contact-details-section style="background-color: #fafafa;"
+  .container
+    .row.title-desc
+      .col-md-12
+        h2=@translation.contacts_label
+        p &nbsp;
+    .row
+      .col-md-12
+        .text-center
+          a target="_blank" href= @site.map_url
+            img src= @site.map_image.url style="width:60%"
+    br
+    br
+    br
+    .row
+      .col-sm-4.contact-detail-content
+        i.icon-map-pin-fill
+        h3 = @translation.find_us_label
+        p=raw @translation.find_us
+
+
+      .col-sm-4.contact-detail-content
+        i.icon-mail4
+        h3 = @translation.lets_talk_label
+        p=raw @translation.lets_talk
+
+      .col-sm-4.contact-detail-content
+        i.icon-headset-m
+        h3 = @translation.support_label
+        p=raw @translation.support

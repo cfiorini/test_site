@@ -1,0 +1,28 @@
+.container
+  legend Site News
+    
+  .col-md-8
+    - for translation in @translations
+      legend
+        = translation.language.try :name
+        .pull-right= link_to 'Add a News', new_site_admin_local_news_item_path(translation_id: translation.id), class: 'btn btn-primary btn-xs'   
+        .clearfix
+      table.table
+        thead
+          tr
+            th Image
+            th Title
+            th Date
+            th
+            th
+
+        tbody
+          - translation.local_news_items.order('date desc').limit(4).each do |local_news_item|
+            tr
+              td = image_tag local_news_item.image.url(:thumb)
+              td =raw local_news_item.title
+              td = ((local_news_item.date || local_news_item.created_at).strftime("%d-%m-%Y"))
+              td = link_to 'Edit', edit_site_admin_local_news_item_path(local_news_item)
+              td = link_to 'Delete', site_admin_local_news_item_path(local_news_item), data: {:confirm => 'Are you sure?'}, :method => :delete
+      br
+      br

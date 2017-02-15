@@ -1,0 +1,30 @@
+section#contact.section.contact-section
+  .container
+    .row.title-desc
+      .col-md-12
+        h2 contact us
+        p &nbsp;
+    .row
+      .col-md-8.col-md-offset-2
+        p.form-message style=("display: none;")
+        .contact-form
+          form#contactform.form-horizontal action="/contacts" method="post" name="contactform" role="form"
+            /! Field 1
+            .row
+              .col-md-6
+                h3 name:
+                .input-text.form-group.left-field
+                  input.input-name.form-control name="contact_name" type="text"
+              .col-md-6
+                h3 Phone:
+                .input-text.form-group
+                  input.input-name.form-control name="contact_phone" type="text"
+            h3 Email:
+            .input-email.form-group
+              input.input-email.form-control name="contact_email" type="email"
+            h3 Message:
+            .textarea-message.form-group
+              textarea.textarea-message.form-control name="contact_message" rows="7"
+            button.btn.btn-default type="submit"
+              | Submit
+              i.flaticon-arrow209

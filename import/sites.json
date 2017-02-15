@@ -1,0 +1,454 @@
+{
+	"mapwidth":"1200",
+	"mapheight":"760",
+	"categories":[
+
+	],
+	"levels":[
+		{
+			"id":"world",
+			"title":"World",
+			"map":"images/maps/world.svg",
+			"locations":[
+				{
+					"id": "rome",
+					"title": "EUROPE Headquarters - Rome",
+					"description": "Vox spa, Rome , Italy.",
+					"pin": "circular-main",
+					"link": "http://www.voxtours.com",
+					"x": "0.5337",
+					"y": "0.5058"
+				},
+
+				{
+					"id": "vancouver",
+					"title": "CANADA - Vancouver",
+					"description": "Toll Free Ph. +1 877 398 4869",
+					"pin": "circular",
+					"link": "",
+					"x": "0.1734",
+					"y": "0.4637"
+				},
+
+		{
+					"id": "scottsdale",
+					"title": "AMERICA Headquarters - Scottsdale",
+					"description": "Voxnetwork USA llc <br> 14354 N Frank Lloyd <br> Wright Boulevard Suite A-4 <br> Scottsdale, AZ 85260 <br> Ph. +1 480 202 0780 <br>Fax +1 480 6576892 <br> info@voxnetworkusa.com",
+					"pin": "circular-main",
+					"link": "http://www.voxnetworkusa.com",
+					"x": "0.2010",
+					"y": "0.5537"
+				},
+	{
+					"id": "mexico",
+					"title": "MEXICO - Mexico City",
+					"description": "Vox Network México S.A. de C.V. <br> Sofocles, 133-A <br> Chapultepec Morales <br> Ph. +52 55 52334362",
+					"pin": "circular",
+					"link": "",
+					"x": "0.2359",
+					"y": "0.6162"
+				},
+				{
+					"id": "newyork",
+					"title": "USA - New York",
+					"description": "Broadway W 40 Street NY 10018 – USA <br> Ph. +1 480 202 0780",
+					"pin": "circular",
+					"link": "",
+					"x": "0.3089",
+					"y": "0.5091"
+				},
+
+
+	{
+					"id": "lisbon",
+					"title": "PORTUGAL - Lisbon",
+					"description": "VOX PORTUGAL Lda <br> Rua Luis Braille, 6 - R/C Loja C <br> 1400-031 Lisboa <br> T&F: +351 215903387 <br> M: +351 912473600",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4771",
+					"y": "0.5220"
+				},
+
+				{
+					"id": "jeronimos",
+					"title": "PORTUGAL - Jeronimos Monastery",
+					"description": "Ph. +351 91 225 49 50",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4776",
+					"y": "0.5220"
+				},
+
+					{
+					"id": "santiagodecompostela",
+					"title": "SPAIN - Santiago de Compostela",
+					"description": "Av. Juan XXIII, s/n <br> Darsena de Autobuses turisticos <br> 15704 Santiago de Compostela <br> (La Coruña) <br> Ph. +34 981071031 <br> Mob. +34 691186049",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4784",
+					"y": "0.4987"
+				},
+	{
+					"id": "cordoba",
+					"title": "SPAIN - Cordoba",
+					"description": "Cardenal Herrero 1 <br> Interior Patio de Los Naranjos <br> Cordoba",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4884",
+					"y": "0.5264"
+				},
+
+	{
+					"id": "madrid",
+					"title": "SPAIN - Madrid",
+					"description": "AUDIOTOURS SYSTEM ESPANA <br> Calle de Alcala’, 634 <br> 28022 – Madrid <br> Ph. +34 913 931 483 <br> Mob. +34 637946134",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4923",
+					"y": "0.5125"
+				},
+
+					{
+					"id": "barcelona",
+					"title": "SPAIN - Barcelona",
+					"description": "Carrer De L’ acer, 30-32 <br> Edificio Sertram Local 25 <br> 08038 - Barcelona <br> Ph. +34 931 752 903 <br> Mob. +34 666 34 61 40",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5062",
+					"y": "0.5073"
+				},
+									{
+					"id": "dublin",
+					"title": "IRELAND - Dublin",
+					"description": "VOX TOURS Ireland <br> 57A St. Assams Park <br> Raheny – Dublin 5 <br> Mob. +353 86 2555 217 <br> Mob. +353 89 4363 250",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4848",
+					"y": "0.4348"
+				},
+
+									{
+					"id": "glasgow",
+					"title": "UK - Glasgow",
+					"description": "Technology House <br> 9 Newton Place <br> G3 7PR – Glasgow <br> Mob. +44 7944684259 <br> Fax +44 2070840310",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4899",
+					"y": "0.4170"
+				},
+
+										{
+					"id": "london",
+					"title": "UK - London",
+					"description": "DON’T MISS A WORD Ltd <br> 272-274 Vauxhall Bridge Road <br> 3rd floor – office # 9 <br> SW1V1BB – London <br> Ph. +44 (0) 8438491497 <br> Operations Mob. +44 (0) 7507817627 <br> Marketing Mob. +44 (0) 7931617655 <br> Fax +44 2070840310",
+					"pin": "circular",
+					"link": "",
+					"x": "0.4999",
+					"y": "0.4467"
+				},
+
+														{
+					"id": "lourdes",
+					"title": "FRANCE - Lourdes",
+					"description": "SIREDO Sarl <br> 23, Rue de Pau <br> 65100 - Lourdes <br> Ph.: +33 (0) 5 62 34 20 35 <br> Mob. +33 (0) 6 31 77 65 73",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5014",
+					"y": "0.4968"
+				},
+
+																{
+					"id": "paris",
+					"title": "FRANCE - Paris",
+					"description": "Mob. +33 6 09 07 45 76",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5075",
+					"y": "0.4646"
+				},
+
+																{
+					"id": "amsterdam",
+					"title": "NETHERLANDS - Amsterdam",
+					"description": "DESTINO 1 V.O.F. <br> Prins Hendrikkade 48R <br> 1012 AC – Amsterdam <br> Ph. +31 203303374 <br> Fax +31 207083057",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5147",
+					"y": "0.4422"
+				},
+
+										{
+					"id": "lucerne",
+					"title": "SWITZERLAND - Lucerne",
+					"description": "VOX SWITZERLAND <br> Mozartstrasse, 14 <br> CH 6004 - Lucerne <br> Mob. +41 79 8909720",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5238",
+					"y": "0.4737"
+				},
+										{
+					"id": "milan",
+					"title": "ITALY - Milan",
+					"description": "Verso Srl <br> Via San Calocero, 13 <br> 20123 - Milan <br> Ph. +39 02 39831135 <br> Mob. +39 335 1858370 <br> Fax + 39 02 87153622",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5260",
+					"y": "0.4834"
+				},
+										{
+					"id": "florence",
+					"title": "ITALY - Florence",
+					"description": "Via Verdi, 12 <br> 50122 - Florence <br> Ph. +39 055 2658280 <br> Mob. +39 329 0198343 <br> Fax +39 055 93931133",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5300",
+					"y": "0.4938"
+				},
+										{
+					"id": "verona",
+					"title": "ITALY - Verona",
+					"description": "Vox Nord Srl <br> Via Teatro Ristori, 2/A <br> 37122 - Verona <br> Ph. +39 045 9818285 <br> Mob. +39 345 1513658 <br> Fax +39 045 5111000",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5303",
+					"y": "0.4834"
+				},
+										{
+					"id": "venice",
+					"title": "ITALY - Venice",
+					"description": "Media Vox Srl <br> S. Marco, 207 Corte Baloni <br> 30124 - Venice <br> Ph. +39 041 5239279 <br> Mob. +39 366 9587555 <br> Fax +39 042 33431137",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5332",
+					"y": "0.4849"
+				},
+
+										{
+					"id": "rimini",
+					"title": "ITALY - Rimini",
+					"description": "Via Flaminia, 391/O <br> 47923 - Rimini <br> Mob. +39 333 2954513",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5333",
+					"y": "0.4918"
+				},
+										{
+					"id": "loreto",
+					"title": "ITALY - Loreto",
+					"description": "Piazza della Madonna, 1 <br> c/o Information Office <br> Palazzo Apostolico 91 <br> Mob. +39 333 2954511",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5368",
+					"y": "0.4962"
+				},
+										{
+					"id": "assisi",
+					"title": "ITALY - Assisi",
+					"description": "Via Fontebella 62/a <br> 06081 - Assisi (PG) <br> Ph. & Fax +39 075 815141 <br> Mob. +39 328 9859997",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5339",
+					"y": "0.4978"
+				},
+
+										{
+					"id": "sangiovannirotondo",
+					"title": "ITALY - San Giovanni Rotondo",
+					"description": "Padre Pio sanctuary <br> Via San Giuseppe, 30 <br> 71013 - San Giovanni Rotondo (FG) <br> Mob. +39 338 1961823",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5423",
+					"y": "0.5067"
+				},
+
+										{
+					"id": "naples",
+					"title": "ITALY - Naples",
+					"description": "Pompei – Caserta – Capri - Sorrento – Paestum <br> Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5391",
+					"y": "0.5123"
+				},
+
+										{
+					"id": "munich",
+					"title": "GERMANY - Munich",
+					"description": "Vox Deutschland GmbH  <br> Sonnenstraße 23 <br> 80331 – Munich <br> Ph. +49 (0)89 88908955 <br> Mob. +49 15116338503",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5329",
+					"y": "0.4671"
+				},
+										{
+					"id": "wien",
+					"title": "AUSTRIA - Wien",
+					"description": "VOX TOURS AUSTRIA-HUNGARY Kft. <br> Mob. +43 6763072411",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5447",
+					"y": "0.4683"
+				},
+
+										{
+					"id": "budapest",
+					"title": "HUNGARY - Budapest",
+					"description": "VOX TOURS AUSTRIA-HUNGARY Kft. <br> Csengery utca 49.II/23 <br> 1067 – Budapest <br> Ph. +36 30 6049320",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5527",
+					"y": "0.4714"
+				},
+										{
+					"id": "warsaw",
+					"title": "POLAND - Warsaw",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5560",
+					"y": "0.4395"
+				},
+
+										{
+					"id": "karlovyvary",
+					"title": "CZECH REPUBLIC - Karlovy Vary",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5368",
+					"y": "0.4543"
+				},
+										{
+					"id": "prague",
+					"title": "CZECH REPUBLIC - Prague",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5411",
+					"y": "0.4559"
+				},
+										{
+					"id": "kristiansand",
+					"title": "NORWAY - Kristiansand",
+					"description": "GUIDE SOR <br> Markens Gate 3 <br> 4611 - Kristiansand <br> +47 95404514",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5216",
+					"y": "0.4003"
+				},
+
+										{
+					"id": "tallin",
+					"title": "SCANDINAVIA - Tallin",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5661",
+					"y": "0.3887"
+				},
+										{
+					"id": "stpetersburg",
+					"title": "RUSSIA - St. Petersburg",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5803",
+					"y": "0.3855"
+				},
+
+										{
+					"id": "moscow",
+					"title": "RUSSIA - Moscow",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.6043",
+					"y": "0.4155"
+				},
+										{
+					"id": "athens",
+					"title": "GREECE - Athens",
+					"description": "S. VIZEGOS & Co. Ltd <br> 13 Vassani str. <br> 11852 – Athens <br> Ph. +30 210 9230026/076 <br> Mob. +30 6944 288 772 <br> Fax + 30 210 9230029",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5633",
+					"y": "0.5274"
+				},
+										{
+					"id": "bucharest",
+					"title": "ROMANIA - Bucharest",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5694",
+					"y": "0.4893"
+				},
+
+										{
+					"id": "istanbul",
+					"title": "TURKEY - Istanbul",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5774",
+					"y": "0.5102"
+				},
+
+										{
+					"id": "nazareth",
+					"title": "ISRAEL - Nazareth",
+					"description": "Please contact the Headquarters in Rome",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5940",
+					"y": "0.5524"
+				},
+										{
+					"id": "cairo",
+					"title": "EGYPT - Cairo",
+					"description": "Vox Egypt, Ltd. <br> 55, Gomhoria Street <br> Down Town 11111 – Cairo <br> Ph. +202 27879460 – 33045130 <br> Mob. +20 10 15053535 <br> Fax +202 25911955",
+					"pin": "circular",
+					"link": "",
+					"x": "0.5823",
+					"y": "0.5649"
+				},
+										{
+					"id": "yerevan",
+					"title": "ARMENIA - Yerevan",
+					"description": "83/1 Koghbatsi str. <br> 0001 - Yerevan <br> Ph. +37410 582292 <br> Ph. +37410 543312",
+					"pin": "circular",
+					"link": "",
+					"x": "0.6191",
+					"y": "0.5146"
+				},
+										{
+					"id": "hongkong",
+					"title": "ASIA Headquarters - Hong Kong",
+					"description": "VOX TOURS ASIA Ltd <br> Unit 04,7/F, Bright Way Tower <br> No. 33 Monk Kok Road, Kowloon <br> Ph. +86 755-82660103 <br> Mob. +86 18118759303 <br> info@voxasia.hk",
+					"pin": "circular-main",
+					"link": "www.voxasia.hk",
+					"x": "0.7999",
+					"y": "0.6003"
+				},
+										{
+					"id": "shenzhen",
+					"title": "CHINA - Shenzhen",
+					"description": "Unit 2006, 20 Floor, Jinwei Building <br> Jiabin Road, Luowu, Shenzhen <br> Ph. +86 755-82660103 <br> Mob. +86 18118759303",
+					"pin": "circular",
+					"link": "",
+					"x": "0.8016",
+					"y": "0.5972"
+				},
+										{
+					"id": "singapore",
+					"title": "Singapore - Singapore",
+					"description": "Ph. +65 3157 1336",
+					"pin": "circular",
+					"link": "",
+					"x": "0.7713",
+					"y": "0.6892"
+				}
+			]
+		}
+	]
+}

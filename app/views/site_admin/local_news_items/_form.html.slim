@@ -1,0 +1,24 @@
+= form_for [:site_admin, @local_news_item], html: { multipart: true } do |f|
+  - if @local_news_item.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@local_news_item.errors.count, "error")} prohibited this local_news_item from being saved:"
+      ul
+        - @local_news_item.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control'
+  .form-group
+    = f.label :date
+    = f.date_select :date, order: [:day, :month, :year], class: 'form-control'
+  .form-group
+    = f.label :body
+    = f.cktext_area :body, class: 'form-control'
+  .form-group
+    = f.label :image
+    = f.file_field :image, class: 'form-control'
+  .form-actions 
+    .text-center
+      = f.hidden_field :translation_id
+      = f.submit "Save News", class: 'btn btn-primary'

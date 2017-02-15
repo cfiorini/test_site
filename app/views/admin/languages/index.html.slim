@@ -1,0 +1,21 @@
+.container
+  legend 
+    | Listing Languages
+    .pull-right= link_to 'New Language', new_admin_language_path, class: 'btn btn-primary btn-xs'
+    .clearfix
+  .col-md-8
+    table.table
+      thead
+        tr
+          th Name
+          th Country Code
+          th
+          th
+          th
+
+      tbody
+        - @languages.each do |language|
+          tr
+            td = language.name
+            td = language.country_code
+            td = link_to 'Edit', edit_admin_language_path(language)

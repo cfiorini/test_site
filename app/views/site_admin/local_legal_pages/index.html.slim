@@ -1,0 +1,24 @@
+.container
+  legend Legal Pages
+    
+  .col-md-8
+    - for translation in @translations
+      legend
+        = translation.language.try :name
+        .pull-right= link_to 'Add a Legal Page', new_site_admin_local_legal_page_path(translation_id: translation.id), class: 'btn btn-primary btn-xs'   
+        .clearfix
+      table.table
+        thead
+          tr
+            th Title
+            th
+            th
+
+        tbody
+          - translation.local_legal_pages.each do |local_legal_page|
+            tr
+              td =raw local_legal_page.title
+              td = link_to 'Edit', edit_site_admin_local_legal_page_path(local_legal_page)
+              td = link_to 'Delete', site_admin_local_legal_page_path(local_legal_page), data: {:confirm => 'Are you sure?'}, :method => :delete
+      br
+      br

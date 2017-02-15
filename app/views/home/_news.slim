@@ -1,0 +1,36 @@
+section#news.section.team-section
+  .container
+    .row.title-desc
+      .col-md-12
+        h2 vox news
+        p &nbsp;
+
+    .row.team-block
+      - @news.each do |n|
+        .col-sm-3
+          img.img-responsive src=n.image.url
+          .team-member-details.curl-bottom-left style="width: 100%"
+            h3=raw n.title
+            /h4 16/07/2014
+            p
+              | &nbsp;
+            p.text-center
+              a href="#" style="color: rgb(51, 122, 183)" data-target="#news_modal_#{n.id}" data-toggle="modal" type="button" Read more...
+
+
+
+
+
+- @news.each do |n|
+
+  .modal.fade id="news_modal_#{n.id}"
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close aria-label="Close" data-dismiss="modal" type="button"
+            span aria-hidden="true"  &times;
+          h4.modal-title=raw n.title
+        .modal-body
+          /p=raw n.body
+        .modal-footer
+          button.btn.btn-primary data-dismiss="modal" type="button"  Close

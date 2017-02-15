@@ -1,0 +1,8 @@
+section#copyrights.copyrights-section
+  .container
+    .row
+      - @translation.local_legal_pages.each do |page|
+        = link_to page.title, site_legal_page_path(@site, page, l: @translation.id), style: "margin-right: 30px;"
+    br
+    .row
+      p Copyrights Vox S.p.A. - 2015

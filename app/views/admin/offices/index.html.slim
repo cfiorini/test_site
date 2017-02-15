@@ -1,0 +1,21 @@
+.container
+  legend 
+    | Listing Offices
+    .pull-right= link_to 'New Office', new_admin_office_path, class: 'btn btn-primary btn-xs'
+    .clearfix
+  .col-md-8
+    table.table
+      thead
+        tr
+          th Title
+          th HQ?
+          th
+          th
+
+      tbody
+        - @offices.each do |office|
+          tr
+            td = office.title
+            td = office.hq
+            td = link_to 'Edit', edit_admin_office_path(office)
+            td = link_to 'Destroy', admin_office_path(office), data: {:confirm => 'Are you sure?'}, :method => :delete

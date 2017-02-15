@@ -1,0 +1,11 @@
+h2 New contact from Vox Website
+
+b= @params[:contact_name]
+br
+= @params[:contact_email]
+br
+= @params[:contact_phone]
+br
+| wrote:
+hr
+p= simple_format @params[:contact_message]

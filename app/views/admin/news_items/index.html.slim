@@ -1,0 +1,23 @@
+.container
+  legend
+    | Listing News Items
+    .pull-right= link_to 'Create News Item', new_admin_news_item_path, class: 'btn btn-primary btn-xs'
+    .clearfix
+  .col-md-8
+    table.table
+      thead
+        tr
+          th Image
+          th Title
+          th Date
+          th
+          th
+
+      tbody
+        - @news_items.each do |newsItem|
+          tr
+            td = image_tag newsItem.image.url(:thumb)
+            td =raw newsItem.title
+            td = ((newsItem.date || newsItem.created_at).strftime("%d-%m-%Y"))
+            td = link_to 'Edit', edit_admin_news_item_path(newsItem)
+            td = link_to 'Delete', admin_news_item_path(newsItem), data: {:confirm => 'Are you sure?'}, :method => :delete

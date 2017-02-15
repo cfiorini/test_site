@@ -1,0 +1,18 @@
+= form_for [:site_admin, @local_legal_page] do |f|
+  - if @local_legal_page.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@local_legal_page.errors.count, "error")} prohibited this legal page from being saved:"
+      ul
+        - @local_legal_page.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control'
+  .form-group
+    = f.label :body
+    = f.cktext_area :body, class: 'form-control'
+  .form-actions 
+    .text-center
+      = f.hidden_field :translation_id
+      = f.submit "Save Legal Page", class: 'btn btn-primary'

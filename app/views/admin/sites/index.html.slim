@@ -1,0 +1,35 @@
+.container
+  legend
+    | Listing Sites
+    .pull-right= link_to 'New Site', new_admin_site_path, class: 'btn btn-primary btn-xs'
+    .clearfix
+  .col-md-12
+    table.table
+      thead
+        tr
+          th Header Image
+          th Map Image
+          th Name
+          th Slug
+          th Translations
+          th
+          th
+
+      tbody
+        - @sites.each do |site|
+          tr
+            td = image_tag site.header.url(:thumb)
+            td = image_tag site.map_image.url(:thumb)
+            td = site.name
+            td = site.slug
+            
+            
+            td 
+              - for translation in site.translations
+                .pull-left.text-center style="margin-right: 20px"
+                  img src="/images/flags/#{translation.language.country_code}.png" style="height: 25px"
+                  br
+                  = link_to 'x', admin_translation_path(translation), data: {confirm: 'Are you sure?'}, method: :delete
+            td = link_to 'Edit', edit_admin_site_path(site)
+            td = link_to 'Destroy', admin_site_path(site), data: {:confirm => 'Are you sure?'}, :method => :delete
+            td = link_to 'Add Language', new_admin_translation_path(site_id: site.id)

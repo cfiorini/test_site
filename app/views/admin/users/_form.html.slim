@@ -1,0 +1,20 @@
+= form_for [:admin, @user] do |f|
+  - if @user.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@user.errors.count, "error")} prohibited this translation from being saved:"
+      ul
+        - @user.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    = f.label :email
+    = f.text_field :email, class: 'form-control'
+  .form-group
+    = f.label :password
+    = f.text_field :password, class: 'form-control'
+  .form-group
+    = f.label :site
+    = f.collection_select :site_id, Site.all, :id, :name, {prompt: "Select a site"}, class: 'form-control'
+  .form-actions 
+    .text-center
+      = f.submit "Save User", class: 'btn btn-primary'

@@ -1,0 +1,18 @@
+.container
+  .row
+    .col-md-6.col-xs-12
+      - if flash[:notice]
+        .alert.alert-success
+          p = flash[:notice]
+      .panel.panel-default
+        .panel-heading
+          h4 Main Site Keywords
+        .panel-body
+          = form_for @conf, url: admin_confs_path, html: {method: :patch} do |f|
+            .form-group
+              = f.label '(one per line)'
+              = f.text_area :keywords, class: 'form-control', rows: 10
+            .form-group
+              .text-center
+                = f.submit "Save", class: 'btn btn-primary'
+

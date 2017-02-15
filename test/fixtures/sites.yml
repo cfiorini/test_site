@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+London:
+  name: London
+  slug: ldn
+
+Rome:
+  name: Rome
+  slug: rme

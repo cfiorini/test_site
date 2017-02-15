@@ -1,0 +1,15 @@
+= form_for [:admin, @translation] do |f|
+  - if @translation.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@translation.errors.count, "error")} prohibited this translation from being saved:"
+      ul
+        - @translation.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    = f.label :language
+    = f.collection_select :language_id, Language.all, :id, :name, {},  class: 'form-control'
+  .form-actions 
+    .text-center
+      = f.hidden_field :site_id
+      = f.submit nil, class: 'btn btn-primary'

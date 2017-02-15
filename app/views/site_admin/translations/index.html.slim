@@ -1,0 +1,17 @@
+.container
+  legend
+    | Listing Translations    
+    .clearfix
+  .col-md-8
+    table.table
+      thead
+        tr
+          th Language
+          
+      tbody
+        - @translations.each do |translation|
+          tr
+            td = translation.language.try :name
+            td = link_to 'Preview', "/sites/#{translation.site_id}?l=#{translation.id}", target: :_blank
+            td = link_to 'Edit', edit_site_admin_translation_path(translation)
+            
