@@ -18,13 +18,13 @@
       tbody
         - @sites.each do |site|
           tr
-            td = image_tag site.header.url(:thumb)
-            td = image_tag site.map_image.url(:thumb)
+            td = image_tag site.header.url(:thumb) rescue nil
+            td = image_tag site.map_image.url(:thumb) rescue nil
             td = site.name
             td = site.slug
-            
-            
-            td 
+
+
+            td
               - for translation in site.translations
                 .pull-left.text-center style="margin-right: 20px"
                   img src="/images/flags/#{translation.language.country_code}.png" style="height: 25px"

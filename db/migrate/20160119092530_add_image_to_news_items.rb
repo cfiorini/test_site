@@ -1,4 +1,4 @@
-class AddImageToNewsItems < ActiveRecord::Migration
+class AddImageToNewsItems < ActiveRecord::Migration[4.2]
   def change
     add_column :news_items, :image, :string
   end

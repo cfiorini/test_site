@@ -1,4 +1,4 @@
-class AddLabelsToTranslations < ActiveRecord::Migration
+class AddLabelsToTranslations < ActiveRecord::Migration[4.2]
   def change
   	add_column :translations, :intro_label, :string
   	add_column :translations, :services_label, :string

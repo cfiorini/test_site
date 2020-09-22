@@ -1,4 +1,4 @@
-class AddSectionsToTranslations < ActiveRecord::Migration
+class AddSectionsToTranslations < ActiveRecord::Migration[4.2]
   def change
     add_column :translations, :intro, :text
     add_column :translations, :services, :text

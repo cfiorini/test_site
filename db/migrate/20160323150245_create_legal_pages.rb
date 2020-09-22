@@ -1,4 +1,4 @@
-class CreateLegalPages < ActiveRecord::Migration
+class CreateLegalPages < ActiveRecord::Migration[4.2]
   def change
     create_table :local_legal_pages do |t|
       t.text :title

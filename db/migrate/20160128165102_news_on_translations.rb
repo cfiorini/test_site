@@ -1,5 +1,5 @@
-class NewsOnTranslations < ActiveRecord::Migration
-  
+class NewsOnTranslations < ActiveRecord::Migration[4.2]
+
   def up
   	LocalNewsItem.delete_all
   	remove_column :local_news_items, :site_id
