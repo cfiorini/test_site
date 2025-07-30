@@ -19,11 +19,11 @@ User.create!(
 )
 
 @coordinates = [
-  {x: 0.1734 , y: 0.4637},
-  {x: 0.4784 , y: 0.4987},
-  {x: 0.5527 , y: 0.4714},
-  {x: 0.5823 , y: 0.5649},
-  {x: 0.7999 , y: 0.6003},
+  {x: -123.12, y: 49.25},
+  {x:   19.13, y: 47.48},
+  {x:   -8.54, y: 42.88},
+  {x:   31.56, y: 30.03},
+  {x:  113.57, y: 22.14},
 ]
 
 5.times do |i|
@@ -76,6 +76,3 @@ insert_translation(@it_site, @en)
 insert_translation(@it_site, @it)
 insert_translation(@es_site, @en)
 insert_translation(@es_site, @es)
-
-
-
