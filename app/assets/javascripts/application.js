@@ -27,4 +27,3 @@
 //= require frontend/hammer.min
 //= require frontend/jquery.easing
 //= require frontend/smoothscroll
-//= require frontend/mapplic

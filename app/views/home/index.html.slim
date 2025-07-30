@@ -12,23 +12,3 @@
 = render partial: 'home/contact_details'
 = render partial: 'home/social_icons'
 = render partial: 'home/footer'
-
-javascript:
-  $(document).ready(function() {
-
-    $('#mapplic').mapplic({
-      source: '/offices.json',
-      selector: '#countries > *',
-      height: 460,
-      animate: false,
-      sidebar: false,
-      minimap: false,
-      locations: true,
-      deeplinking: true,
-      fullscreen: false,
-      hovertip: true,
-      developer: false,
-      maxscale: 6,
-      zoom: true
-    });
-  });

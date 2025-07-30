@@ -1,6 +1,6 @@
 class Office < ActiveRecord::Base
 
-  def as_json(params)
+  def as_json
     {
       id: "office#{id}",
       title: title,
