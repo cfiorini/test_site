@@ -196,46 +196,6 @@ $(document).ready(function($) {
         }
 	});
 
-	/* --------------------------------------------
-	Google Map
-	--------------------------------------------- */
-	$(function() {
-		"use strict";
-		function initialize() {
-			var myLatlng = new google.maps.LatLng(44.5403, -78.5463);
-			var mapOptions = {
-				zoom: 8,
-				disableDefaultUI: false,
-				scrollwheel: true,
-				draggable: true,
-				center: myLatlng
-			};
-			var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-			var contentString = '<div id="map-content">' +
-				'<p>Envato Pvt Ltd.</p>' +
-				'<div>NJ 07305,</div>' +
-				'<div>New York,</div>' +
-				'<div>USA</div>'
-			'</div>';
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			});
-			var marker = new google.maps.Marker({
-				position: map.getCenter(),
-				icon: {
-					path: google.maps.SymbolPath.CIRCLE,
-					scale: 10
-				},
-				map: map
-			});
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
-			});
-		}
-		$('.map').each(function() {
-			google.maps.event.addDomListener(window, 'load', initialize);
-		});
-	});
 
 	/* --------------------------------------------
 	Text Slider

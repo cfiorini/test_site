@@ -4,7 +4,8 @@ class Site < ActiveRecord::Base
   has_many :users
   has_many :translations, dependent: :destroy
   belongs_to :default_translation, class_name: 'Translation',
-                                   foreign_key: :default_translation_id
+                                   foreign_key: :default_translation_id,
+                                   optional: true
 
   after_create :create_default_translation
 

@@ -21,7 +21,7 @@ set :sidekiq_pid, lambda { "#{deploy_to}/#{shared_path}/tmp/pids/sidekiq-0.pid" 
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml','config/secrets.yml','config/puma.rb', 'log','tmp/pids', 'tmp/sockets', 'public/uploads', 'public/img/Firma']
+set :shared_paths, ['config/database.yml','config/puma.rb', 'log','tmp/pids', 'tmp/sockets', 'public/uploads', 'public/img/Firma']
 
 # Optional settings:
 set :user, 'deploy'    # Username in the server to SSH to.
@@ -76,4 +76,3 @@ end
 #  - http://nadarei.co/mina/tasks
 #  - http://nadarei.co/mina/settings
 #  - http://nadarei.co/mina/helpers
-

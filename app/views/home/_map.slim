@@ -1,9 +1,83 @@
-section#map.map-section
+section.map-section
   .container
     .row.title-desc
       .col-md-12
         h2 Our Offices
         p &nbsp;
-  #mapplic
+  #map.map
   br
   br
+
+javascript:
+  var map = new maplibregl.Map({
+          attributionControl: false,
+          container: 'map',
+          style: 'https://maps.popguide.app/app/style.json?key=ciccio', // stylesheet location
+          center: [12, 42], // starting position [lng, lat]
+          zoom: 2 // starting zoom
+  });
+
+  var map_color = (pin_name) => {
+    color = null;
+    if(pin_name == "circular-main")
+      color = "#FB7575"
+    else
+      color = "#3498DB"
+
+    return color
+  }
+
+  map.on('load', () => {
+    fetch('/offices.json')
+      .then(res => res.json())
+      .then(data => {
+        const geojson = {
+          type: 'FeatureCollection',
+          features: data.locations.map(loc => ({
+            type: 'Feature',
+            properties: { title: loc.title, color: map_color(loc.pin) },
+            geometry: {
+              type: 'Point',
+              coordinates: [loc.x, loc.y]
+            }
+          }))
+        };
+
+        map.addSource('points', {
+          type: 'geojson',
+          data: geojson
+        });
+
+        map.addLayer({
+          id: 'point-layer',
+          type: 'circle',
+          source: 'points',
+          paint: {
+            'circle-color': ['get', 'color'],
+            'circle-radius': 8
+          }
+        });
+
+        map.on('click', 'point-layer', (e) => {
+          const coords = e.features[0].geometry.coordinates;
+          const title = e.features[0].properties.title;
+          new maplibregl.Popup()
+            .setLngLat(coords)
+            .setHTML(`<strong>${title}</strong>`)
+            .addTo(map);
+        });
+
+        map.on('mouseenter', 'point-layer', () => {
+          map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'point-layer', () => {
+          map.getCanvas().style.cursor = '';
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching locations:', error);
+      });
+  });
+
+
+  map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: `<a href="https://www.voxtours.com/" target="_blank">Vox S.p.a.</a>` }));
